@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Thế Chương | Flutter Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Porfolio Giới Thiệu</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#education">Học vấn</a></li>
+        <li><a href="#activities">Hoạt động</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="images/adnhdaidien.jpg" alt="Nguyễn Thế Chương" class="avatar-photo" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Xin chào, tôi là</p>
+        <h1 class="hero-name">Nguyễn Thế Chương</h1>
+        <div class="hero-role">
+          <span class="role-badge"><i class="fa-brands fa-flutter"></i> Flutter Developer</span>
+          <span class="role-badge secondary"><i class="fa-solid fa-graduation-cap"></i> Thực Tập IT</span>
+        </div>
+        <p class="hero-desc">
+          Sinh viên CNTT với đam mê phát triển ứng dụng mobile, đặc biệt là các ứng dụng tích hợp AI và hệ thống backend hiện đại.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Xem dự án</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Liên hệ</a>
+        </div>
+
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Về tôi</span>
+        <h2 class="section-title">Giới thiệu bản thân</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="about-avatar">
+            <img src="images/adnhdaidien.jpg" alt="Nguyễn Thế Chương" class="about-photo" />
+          </div>
+          <h3>Nguyễn Thế Chương</h3>
+          <p class="about-position">Flutter Developer Intern</p>
+          <p class="about-bio">
+            Xin chào! Tôi là sinh viên ngành Công nghệ Thông tin tại Đại học Thủ Dầu Một với định hướng trở thành <strong>Flutter Developer</strong>. Tôi yêu thích phát triển ứng dụng mobile, đặc biệt là các ứng dụng đọc truyện tích hợp AI và hệ thống backend hiện đại.
+          </p>
+          <div class="about-info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>An Phú, TP. Hồ Chí Minh</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>thechuong1910@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>0345038760</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-github"></i>
+              <span>github_lonely-ntc</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-goals">
+          <div class="goal-card glass">
+            <div class="goal-icon short"><i class="fa-solid fa-bullseye"></i></div>
+            <div>
+              <h4>Mục tiêu ngắn hạn</h4>
+              <ul>
+                <li>Học hỏi kinh nghiệm phát triển bản thân</li>
+                <li>Tiếp tục phát triển dự án App Truyện</li>
+              </ul>
+            </div>
+          </div>
+          <div class="goal-card glass">
+            <div class="goal-icon long"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h4>Mục tiêu dài hạn</h4>
+              <ul>
+                <li>Làm việc trong môi trường IT chuyên nghiệp</li>
+                <li>Phát triển kỹ năng lập trình chuyên sâu</li>
+                <li>Thành thạo giao tiếp tiếng Anh</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stats-row">
+            <div class="stat-box glass">
+              <span class="stat-num">2022</span>
+              <span class="stat-label">Bắt đầu học</span>
+            </div>
+            <div class="stat-box glass">
+              <span class="stat-num">7.1</span>
+              <span class="stat-label">GPA</span>
+            </div>
+            <div class="stat-box glass">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Dự án</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Chuyên môn</span>
+        <h2 class="section-title">Kỹ năng</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Ngôn ngữ lập trình</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Flutter</span>
+            <span class="skill-tag primary">Dart</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Framework & Công nghệ</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag blue">Flutter</span>
+            <span class="skill-tag blue">RESTful API</span>
+            <span class="skill-tag blue">Firebase</span>
+            <span class="skill-tag blue">SQLite</span>
+            <span class="skill-tag blue">Cloudinary</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-wrench"></i>
+            <h3>Công cụ</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag green">Git</span>
+            <span class="skill-tag green">Android Studio</span>
+            <span class="skill-tag green">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Kiến thức</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag purple">OOP</span>
+            <span class="skill-tag purple">UI/UX cơ bản</span>
+            <span class="skill-tag purple">Tích hợp API</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Kỹ năng mềm</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag orange">Giao tiếp nhóm</span>
+            <span class="skill-tag orange">Thích nghi tốt</span>
+            <span class="skill-tag orange">Giải quyết vấn đề</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-language"></i>
+            <h3>Ngoại ngữ</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag teal">Tiếng Anh cơ bản</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Dự án nổi bật</h2>
+      </div>
+      <div class="project-card glass featured">
+        <div class="project-badge">⭐ Dự án chính</div>
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <div>
+            <h3 class="project-title">App Truyện</h3>
+            <span class="project-year"><i class="fa-regular fa-calendar"></i> 2026 - Nay</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Ứng dụng đọc truyện di động đa tính năng, tích hợp AI chatbot thông minh giúp người dùng tìm kiếm truyện theo yêu cầu. Hệ thống quản lý tài khoản đầy đủ với xác thực OTP qua email.
+        </p>
+        <div class="project-features">
+          <h4><i class="fa-solid fa-list-check"></i> Tính năng</h4>
+          <div class="feature-list">
+            <div class="feature-item"><i class="fa-solid fa-check"></i> Đọc truyện theo chapter</div>
+            <div class="feature-item"><i class="fa-solid fa-check"></i> Tìm kiếm truyện</div>
+            <div class="feature-item"><i class="fa-solid fa-check"></i> Lưu yêu thích</div>
+            <div class="feature-item"><i class="fa-solid fa-check"></i> Quản lý tài khoản người dùng</div>
+            <div class="feature-item"><i class="fa-solid fa-check"></i> Chatbox AI tìm truyện theo yêu cầu</div>
+          </div>
+        </div>
+        <div class="project-tech">
+          <h4><i class="fa-solid fa-microchip"></i> Công nghệ sử dụng</h4>
+          <div class="tech-list">
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/flutter_icon_130936.webp" alt="Flutter" />
+              </div>
+              <div>
+                <strong>Flutter</strong>
+                <span>Phát triển giao diện UI</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/sqlite.jpg" alt="SQLite" />
+              </div>
+              <div>
+                <strong>SQLite</strong>
+                <span>Lưu dữ liệu truyện offline</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/firebase.png" alt="Firebase" />
+              </div>
+              <div>
+                <strong>Firebase</strong>
+                <span>Lưu tài khoản & dữ liệu truyện mới</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/cloudinary.png" alt="Cloudinary" />
+              </div>
+              <div>
+                <strong>Cloudinary</strong>
+                <span>Lưu ảnh bìa truyện</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo tech-logo-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div>
+                <strong>EmailJS</strong>
+                <span>Gửi mail xác thực OTP & thông báo</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo tech-logo-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <strong>Groq AI</strong>
+                <span>Xây dựng chatbot AI tìm truyện</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/github1.png" alt="GitHub" />
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>Quản lý mã nguồn</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/android-studio-icon.webp" alt="Android Studio" />
+              </div>
+              <div>
+                <strong>Android Studio</strong>
+                <span>Môi trường phát triển</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo">
+                <img src="images/vs code.jpg" alt="VS Code" />
+              </div>
+              <div>
+                <strong>VS Code</strong>
+                <span>Trình soạn thảo code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/lonely-ntc/Nhom35_apptruyen.git" target="_blank" class="btn btn-outline btn-sm">
+            <i class="fa-brands fa-github"></i> Xem trên GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Học vấn</span>
+        <h2 class="section-title">Quá trình học tập</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+              <div>
+                <h3>Đại học Thủ Dầu Một</h3>
+                <p class="edu-major">Công nghệ Thông tin</p>
+              </div>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-badge time"><i class="fa-regular fa-calendar"></i> 2022 - Nay</span>
+              <span class="edu-badge grade"><i class="fa-solid fa-star"></i> Xếp loại: Khá</span>
+              <span class="edu-badge gpa"><i class="fa-solid fa-chart-bar"></i> GPA: 7.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="section" id="activities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hoạt động</span>
+        <h2 class="section-title">Hoạt động & Cộng đồng</h2>
+      </div>
+      <div class="activities-grid">
+        <div class="activity-card glass">
+          <div class="activity-icon club">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <div class="activity-content">
+            <div class="activity-header">
+              <h3>TSSC - CLB Sinh viên Khởi nghiệp TDMU</h3>
+              <span class="activity-role">Thành viên</span>
+            </div>
+            <span class="activity-time"><i class="fa-regular fa-calendar"></i> 2023 - Nay</span>
+            <ul class="activity-list">
+              <li>Tham gia hoạt động sáng tạo và khởi nghiệp dành cho sinh viên</li>
+              <li>Học hỏi kỹ năng teamwork và phát triển dự án</li>
+            </ul>
+          </div>
+        </div>
+        <div class="activity-card glass">
+          <div class="activity-icon volunteer">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <div class="activity-content">
+            <div class="activity-header">
+              <h3>Hoạt động tình nguyện</h3>
+              <span class="activity-role">Tình nguyện viên</span>
+            </div>
+            <ul class="activity-list">
+              <li>Tích cực tham gia nhiều chiến dịch tình nguyện trong trường</li>
+              <li>Hỗ trợ tổ chức hoạt động</li>
+              <li>Phát triển kỹ năng giao tiếp và làm việc nhóm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Liên hệ</span>
+        <h2 class="section-title">Kết nối với tôi</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:thechuong1910@gmail.com" class="contact-card glass">
+          <div class="contact-icon email"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>thechuong1910@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:0345038760" class="contact-card glass">
+          <div class="contact-icon phone"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h4>Điện thoại</h4>
+            <p>0345038760</p>
+          </div>
+        </a>
+        <a href="https://github.com/lonely-ntc" target="_blank" class="contact-card glass">
+          <div class="contact-icon github"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <h4>GitHub</h4>
+            <p>github_lonely-ntc</p>
+          </div>
+        </a>
+        <div class="contact-card glass no-link">
+          <div class="contact-icon location"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>An Phú, TP. Hồ Chí Minh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Nguyễn Thế Chương · Được xây dựng với <i class="fa-solid fa-heart"></i> và Flutter passion</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
